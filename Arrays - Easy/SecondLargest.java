@@ -1,5 +1,6 @@
 class Solution {
     public static int secondLargestElement(int[] nums) {
+        if (nums.length < 2) return -1;
         int maxi = Integer.MIN_VALUE;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] > maxi) {
